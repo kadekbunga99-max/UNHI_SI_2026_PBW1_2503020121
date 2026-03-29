@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Belajar Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- membuat header website -->
+    <header class="bg-dark text-white text-center p-3">
+      <h1>ITA AKSESORIS</h1>
+      <p>Belanja Baju Disini ajah!!</p>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-info" href="#">ITAASHOP</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="bg-light text-center p-5">
+      <h1>Selamat datang di ITA AKSESORIS</h1>
+      <p>Website modern dengan Bootstrap</p>
+      <button class="btn btn-primary">Mulai Sekarang</button>
+    </section>
+
+    <!-- content utama  -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/3/www.madebyvadim.com.jpg?q=80&w=1182&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top img-fluid w-80 h-80"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aksesoris Pria Pack</h5>
+              <p class="card-text">Untuk kegantengan pria</p>
+              <button class="btn btn-success">Belanja Sekarang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1569388330292-79cc1ec67270?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aksesoris Wanita Pack</h5>
+              <p class="card-text">Untuk kecantikan wanita</p>
+              <button class="btn btn-success">Belanja Sekarang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1544601510-638cdd9ae736?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aksesoris Kalcer</h5>
+              <p class="card-text">Style Kalcer Wanita/Pria</p>
+              <button class="btn btn-success">Belanja Sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- kontak -->
+      <section class="mb-4 mt-5">
+        <div class="card">
+          <div class="card-body text-center">
+            <h3>Kontak Kami</h3>
+            <p>Email: julitaaz@email.com</p>
+            <p>Telepon: 081xxxxxx</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+      <p>© ITA AKSESORIS | TOKO TERPERCAYA</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
