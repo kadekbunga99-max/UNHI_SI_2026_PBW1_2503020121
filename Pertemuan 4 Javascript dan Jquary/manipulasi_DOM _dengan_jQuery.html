@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- mengubah teks -->
+    <button id="btn">Ubah Judul</button>
+    <script>
+      $(document).ready(function () {
+        // kode jQuery
+        $("#judul").text("Judul Baru");
+        //mengubah HTML
+        $("#judul").html("<b>Judul Baru</b>");
+        //mengubah CSS
+        $("#judul").css("color", "red");
+
+        //append()
+        $("#konten").append("<p>Paragraf baru</p>");
+        //prepend()
+        $("#konten").prepend("<p>Paragraf di atas</p>");
+        //after()
+        $("#judul").after("<p>Setelah judul</p>");
+
+        //remove()
+        $("#hapus").remove();
+        //empty()
+        $("#konten").empty();
+        //mengubah atribut
+        $("#gambar").attr("src", "gambar2.jpg");
+
+        //contoh program sederhana
+        $(function () {
+          $("#btn").click(function () {
+            $("#judul").text("Judul Baru dengan jQuery");
+            $("#judul").css("color", "blue");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
