@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- inline event (HTML) -->
+    <button onclick="tampilPesan()">Klik Saya</button>
+    <script>
+      function tampilPesan() {
+        alert("Tombol diklik!");
+      }
+      //event melalui javascript
+      document.getElementById("btn").onclick = function () {
+        alert("Klik berhasil");
+      };
+      //addEventListener (Direkomendasikan)
+      document.getElementById("btn").addEventListener("click", function () {
+        alert("Button diklik");
+      });
+      //event pada form
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let nama = document.getElementById("nama").value;
+        alert("Halo " + nama);
+      });
+      //event object
+      document.addEventListener("click", function (e) {
+        console.log(e.target);
+      });
+      //contoh interaksi sederhana
+      document.getElementById("btn").addEventListener("click", function () {
+        document.getElementById("teks").style.color = "red";
+      });
+
+      //event toggle (contoh praktik)
+      document.getElementById("btn").addEventListener("click", function () {
+        let el = document.getElementById("konten");
+
+        if (el.style.display === "none") {
+          el.style.display = "block";
+        } else {
+          el.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
