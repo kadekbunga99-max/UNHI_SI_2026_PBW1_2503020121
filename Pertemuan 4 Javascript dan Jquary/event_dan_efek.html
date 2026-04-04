@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- contoh event click -->
+    <button id="btn">Toggle Konten</button>
+    <p id="teks">Ini adalah konten yang bisa disembunyikan</p>
+
+    <script>
+      $(document).ready(function () {
+        // kode jQuery
+        $("#btn").click(function () {
+          alert("Tombol diklik");
+        });
+
+        //contoh event hover
+        $("#box").mouseenter(function () {
+          $(this).css("background", "yellow");
+        });
+
+        $("#box").mouseleave(function () {
+          $(this).css("background", "white");
+        });
+
+        //hide() dan show()
+        $("#sembunyi").click(function () {
+          $("#teks").hide();
+        });
+
+        $("#tampil").click(function () {
+          $("#teks").show();
+        });
+
+        //toggle()
+        $("#btn").click(function () {
+          $("#teks").toggle();
+        });
+
+        // fadeIn()
+        $("#teks").fadeIn();
+        //fadeOut()
+        $("#teks").fadeOut();
+        //fadeToggle()
+        $("#teks").fadeToggle();
+
+        //slideUp()
+        $("#teks").slideUp();
+        //slideDown()
+        $("#teks").slideDown();
+        //slideToggle()
+        $("#teks").slideToggle();
+
+        //contoh program interaktif
+        $(function () {
+          $("#btn").click(function () {
+            $("#teks").slideToggle();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
