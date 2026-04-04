@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //membuat fungsi (function declaration)
+      function sapa() {
+        console.log("Halo, selamat belajar JavaScript");
+      }
+      //memanggil fungsi
+      sapa();
+
+      //fungsi dengan parameter
+      function sapa(nama) {
+        console.log("Halo " + nama);
+      }
+
+      sapa("Budi");
+      //fungsi dengan return value
+      function tambah(a, b) {
+        return a + b;
+      }
+
+      let hasil = tambah(5, 3);
+      console.log(hasil); // 8
+      //function expression
+      let sapa = function (nama) {
+        console.log("Halo " + nama);
+      };
+
+      sapa("Andi");
+      //arrow function (fungsi modern)
+      const tambah = (a, b) => {
+        return a + b;
+      };
+      //fungsi tanpa parameter
+      function tampilkanPesan() {
+        console.log("Ini fungsi tanpa parameter");
+      }
+      //fungsi dengan banyak parameter
+      function hitungLuas(panjang, lebar) {
+        return panjang * lebar;
+      }
+
+      console.log(hitungLuas(5, 4));
+
+      //contoh program sederhana
+      function hitung() {
+        let a = 10;
+        let b = 5;
+        alert("Hasil: " + (a + b));
+      }
+    </script>
+  </body>
+</html>
