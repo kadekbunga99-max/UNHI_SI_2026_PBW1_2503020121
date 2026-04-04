@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //if statement
+      let nilai = 80;
+
+      if (nilai >= 75) {
+        console.log("Lulus");
+      }
+      //if...else
+      let nilaiUjian = 60;
+
+      if (nilaiUjian >= 75) {
+        console.log("Lulus");
+      } else {
+        console.log("Tidak Lulus");
+      }
+      //if...else if...else
+      let nilaiSiswa = 85;
+
+      if (nilaiSiswa >= 90) {
+        console.log("A");
+      } else if (nilaiSiswa >= 75) {
+        console.log("B");
+      } else if (nilaiSiswa >= 60) {
+        console.log("C");
+      } else {
+        console.log("D");
+      }
+
+      //switch case
+      let hari = "Senin";
+
+      switch (hari) {
+        case "Senin":
+          console.log("Hari kerja");
+          break;
+        case "Minggu":
+          console.log("Hari libur");
+          break;
+        default:
+          console.log("Hari biasa");
+      }
+      //operator ternary
+      let umurKakak = 18;
+
+      let status = umurKakak >= 17 ? "Dewasa" : "Anak-anak";
+
+      console.log(status);
+      //kombinasi dengan operator logika
+      let umurOrang = 20;
+      let punyaKTP = true;
+
+      if (umurOrang >= 17 && punyaKTP) {
+        console.log("Boleh memilih");
+      } else {
+        console.log("Tidak boleh memilih");
+      }
+
+      //contoh program sederhana
+      let nilaiUas = 70;
+
+      if (nilaiUas >= 75) {
+        alert("Anda Lulus");
+      } else {
+        alert("Anda Tidak Lulus");
+      }
+    </script>
+  </body>
+</html>
