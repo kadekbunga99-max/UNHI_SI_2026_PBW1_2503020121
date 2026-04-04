@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //perulangan for
+      for (let i = 1; i <= 5; i++) {
+        console.log("Perulangan ke-" + i);
+      }
+      //perulangan while
+      let s = 1;
+
+      while (s <= 5) {
+        console.log(i);
+        s++;
+      }
+      //perulangan do while
+      let a = 1;
+
+      do {
+        console.log(a);
+        a++;
+      } while (a <= 5);
+      //perulangan pada array
+      let buahEnak = ["Apel", "Jeruk", "Mangga"];
+
+      for (let i = 0; i < buahEnak.length; i++) {
+        console.log(buahEnak[i]);
+      }
+      //perulangan for...of (modern)
+      let buahFavorite = ["Apel", "Jeruk", "Mangga"];
+
+      for (let item of buahFavorite) {
+        console.log(item);
+      }
+      //break (menghentikan loop)
+      for (let i = 1; i <= 5; i++) {
+        if (i === 3) break;
+        console.log(i);
+      }
+      //continue (melewati satu iterasi)
+      for (let i = 1; i <= 5; i++) {
+        if (i === 3) continue;
+        console.log(i);
+      }
+
+      //contoh program sederhana
+      for (let i = 1; i <= 5; i++) {
+        document.write("Angka: " + i + "<br>");
+      }
+    </script>
+  </body>
+</html>
