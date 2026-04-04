@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="ubahJudul()">Ubah Judul</button>
+    <!-- getElementById -->
+    <script>
+      let judul = document.getElementById("judul");
+
+      //querySelector
+      let paragraf = document.querySelector("p");
+      //querySelectorAll
+      let semuaParagraf = document.querySelectorAll("p");
+
+      // innerHTML
+      document.getElementById("judul").innerHTML = "Judul Baru";
+      //textContent
+      document.getElementById("judul").textContent = "Teks Baru";
+
+      //mengubah style (CSS)
+      document.getElementById("judul").style.color = "red";
+      //mengubah atribut
+      document.getElementById("gambar").src = "gambar2.jpg";
+      //menambah elemen
+      let p = document.createElement("p");
+      p.textContent = "Paragraf baru";
+
+      document.body.appendChild(p);
+      //menghapus elemen
+      let el = document.getElementById("hapus");
+      el.remove();
+
+      //contoh program DOM sederhana
+      function ubahJudul() {
+        document.getElementById("judul").innerHTML = "Judul Baru";
+      }
+
+      //contoh manipulasi style
+      function ubahWarna() {
+        document.getElementById("teks").style.color = "blue";
+      }
+    </script>
+  </body>
+</html>
